@@ -3,6 +3,7 @@ using Alura.Estacionamento.Modelos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -85,17 +86,7 @@ namespace Alura.Estacionamento.Modelos
             return registro;
         }
 
-        public Veiculo AlteraDadosVeiculo(Veiculo veiculoAlterado)
-        {
-            // Como estamos trabalhando com array de objetos,
-            // Podemos utilizar os recursos do `Linq to Objetcs` do .NET
-            var veiculoTemp =  (from veiculo in this.Veiculos
-                           where veiculo.Placa == veiculoAlterado.Placa
-                           select veiculo).SingleOrDefault();
-            veiculoTemp.AlteraDadosVeiculo(veiculoAlterado);
-            return veiculoTemp;
 
-         }
 
         public Veiculo PesquisaVeiculoPorTicket(string ticket)
         {
@@ -107,15 +98,6 @@ namespace Alura.Estacionamento.Modelos
            return encontrado;
         }
 
-        public Veiculo PesquisaVeiculoPorPlaca(string placa)
-        {
-            // Como estamos trabalhando com array de objetos,
-            // Podemos utilizar os recursos do `Linq to Objetcs` do .NET
-            var encontrado = (from veiculo in this.Veiculos 
-                             where veiculo.Placa == placa 
-                             select veiculo).SingleOrDefault();
-            return encontrado;
-        }
 
         private string GerarTicket(Veiculo veiculo){
             // Vamos criar um Id aletório para o Ticket usando a Classe GUID e vamos padronizar com o tamanho de 6 caracteres.
@@ -127,6 +109,20 @@ namespace Alura.Estacionamento.Modelos
                            $">>> Placa Veículo: {veiculo.Placa}" +
                            $">>> Operador: {this.OperadorPatio.Matricula}";
             return ticket;
+        }
+
+        public Veiculo PesquisaVeiculoPorPlaca(string placa)
+        {
+            return veiculos.Where(v => v.Placa == placa).First();
+        }
+
+        public Veiculo AlteraDadosVeiculo(Veiculo veiculoAlterado)
+        {
+            var veiculo = veiculos.Where(v => v.Placa == veiculoAlterado.Placa).FirstOrDefault();
+
+            veiculo.AlterarDados(veiculoAlterado);
+
+            return veiculo;
         }
     }
 }

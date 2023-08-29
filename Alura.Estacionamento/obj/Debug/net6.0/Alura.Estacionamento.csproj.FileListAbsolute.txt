@@ -1,0 +1,15 @@
+C:\Users\Pichau\Desktop\.net projetos\alura.estacionamento\Alura.Estacionamento\bin\Debug\net6.0\Alura.Estacionamento.exe
+C:\Users\Pichau\Desktop\.net projetos\alura.estacionamento\Alura.Estacionamento\bin\Debug\net6.0\Alura.Estacionamento.deps.json
+C:\Users\Pichau\Desktop\.net projetos\alura.estacionamento\Alura.Estacionamento\bin\Debug\net6.0\Alura.Estacionamento.runtimeconfig.json
+C:\Users\Pichau\Desktop\.net projetos\alura.estacionamento\Alura.Estacionamento\bin\Debug\net6.0\Alura.Estacionamento.dll
+C:\Users\Pichau\Desktop\.net projetos\alura.estacionamento\Alura.Estacionamento\bin\Debug\net6.0\Alura.Estacionamento.pdb
+C:\Users\Pichau\Desktop\.net projetos\alura.estacionamento\Alura.Estacionamento\obj\Debug\net6.0\Alura.Estacionamento.csproj.AssemblyReference.cache
+C:\Users\Pichau\Desktop\.net projetos\alura.estacionamento\Alura.Estacionamento\obj\Debug\net6.0\Alura.Estacionamento.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pichau\Desktop\.net projetos\alura.estacionamento\Alura.Estacionamento\obj\Debug\net6.0\Alura.Estacionamento.AssemblyInfoInputs.cache
+C:\Users\Pichau\Desktop\.net projetos\alura.estacionamento\Alura.Estacionamento\obj\Debug\net6.0\Alura.Estacionamento.AssemblyInfo.cs
+C:\Users\Pichau\Desktop\.net projetos\alura.estacionamento\Alura.Estacionamento\obj\Debug\net6.0\Alura.Estacionamento.csproj.CoreCompileInputs.cache
+C:\Users\Pichau\Desktop\.net projetos\alura.estacionamento\Alura.Estacionamento\obj\Debug\net6.0\Alura.Estacionamento.dll
+C:\Users\Pichau\Desktop\.net projetos\alura.estacionamento\Alura.Estacionamento\obj\Debug\net6.0\refint\Alura.Estacionamento.dll
+C:\Users\Pichau\Desktop\.net projetos\alura.estacionamento\Alura.Estacionamento\obj\Debug\net6.0\Alura.Estacionamento.pdb
+C:\Users\Pichau\Desktop\.net projetos\alura.estacionamento\Alura.Estacionamento\obj\Debug\net6.0\Alura.Estacionamento.genruntimeconfig.cache
+C:\Users\Pichau\Desktop\.net projetos\alura.estacionamento\Alura.Estacionamento\obj\Debug\net6.0\ref\Alura.Estacionamento.dll
