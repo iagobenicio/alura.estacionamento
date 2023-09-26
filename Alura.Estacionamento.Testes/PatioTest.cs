@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
@@ -130,6 +131,27 @@ namespace Alura.Estacionamento.Testes
 
         }
 
+        [Fact]
+        public void TestaGerarTicket() 
+        {
+            var operador = new Operador();
+            var patio = new Patio();
+
+            patio.OperadorPatio = operador;
+
+            _veiculo.Tipo = Alura.Estacionamento.Modelos.TipoVeiculo.Automovel;
+            _veiculo.Cor = "Preto";
+            _veiculo.Proprietario = "Iago";
+            _veiculo.Modelo = "Gol";
+            _veiculo.Placa = "asd-1926";
+            _veiculo.Ticket = null;
+
+            patio.RegistrarEntradaVeiculo(_veiculo);
+
+            Assert.NotNull(_veiculo.Ticket);
+            Assert.Contains("asd-1926",_veiculo.Ticket);
+
+        }
         public void Dispose()
         {
             _TestOutputHelper.WriteLine("dispose");
